@@ -1,0 +1,1 @@
+A shared module containing common resources for the project.
