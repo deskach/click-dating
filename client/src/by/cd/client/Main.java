@@ -1,4 +1,4 @@
-package bc.cd.client;
+package by.cd.client;
 
 import by.cd.infra.Application;
 import by.cd.infra.ApplicationContext;
