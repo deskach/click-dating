@@ -6,6 +6,7 @@ import lombok.Setter;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+@Singleton
 public class ApplicationContext {
   @Setter
   private ObjectFactory factory;
@@ -16,6 +17,7 @@ public class ApplicationContext {
 
   public ApplicationContext(Config config) {
     this.config = config;
+    cache.put(ApplicationContext.class, this);
   }
 
   public  <T> T getObject(Class<T> tClass) {
