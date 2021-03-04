@@ -1,8 +1,7 @@
-package by.cd.server;
+package by.cd.server.tcp;
 
 import by.cd.infra.Application;
 import by.cd.infra.ApplicationContext;
-import by.cd.server.tcp.TCPServer;
 
 import java.util.HashMap;
 
