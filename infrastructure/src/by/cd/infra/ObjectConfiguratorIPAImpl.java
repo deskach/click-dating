@@ -53,7 +53,7 @@ public class ObjectConfiguratorIPAImpl implements ObjectConfigurator {
 
       if (annotation != null) {
         String key = annotation.value().isEmpty() ? field.getName() : annotation.value();
-        String value = props.get(key);
+        String value = props.getOrDefault(key, "");
         Function<String, Object> parser = strParsers.getOrDefault(field.getType(), v -> v);
 
         field.setAccessible(true);
