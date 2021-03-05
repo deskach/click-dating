@@ -1,1 +1,1 @@
-A shared module containing common resources for the project.
+Shared infrastructure (factory, application context, annotations etc).

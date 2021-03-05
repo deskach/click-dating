@@ -1,4 +1,4 @@
-package by.cd.server;
+package by.cd.common;
 
 public interface ConnectionListener {
   void onConnectionReady(Connection con);

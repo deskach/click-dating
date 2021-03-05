@@ -1,7 +1,7 @@
-package by.cd.server.tcp;
+package by.cd.common.tcp;
 
 import by.cd.infra.InjectByType;
-import by.cd.server.Connection;
+import by.cd.common.Connection;
 import lombok.SneakyThrows;
 
 import java.io.IOException;
@@ -64,5 +64,10 @@ public class TCPConnection implements Connection {
     } catch (IOException e) {
       listener.onException(TCPConnection.this, e);
     }
+  }
+
+  @Override
+  public String toString() {
+    return String.format("TCPConnection: %s:%d", socket.getLocalAddress(), socket.getPort());
   }
 }
